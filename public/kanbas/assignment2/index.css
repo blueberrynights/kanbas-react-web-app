@@ -6,7 +6,7 @@ body {
 
 .main-content {
     margin-left: 85px; /* slightly wider than the sidebar width to avoid overlap */
-  }
+}
   
 .sidebar {
     width: 80px; 
@@ -22,6 +22,10 @@ body {
     margin: 0;
 }
 
+.sidebar a div {
+    text-align: center;
+}
+
 .sidebar li {
     display: flex;
     flex-direction: column;
@@ -34,16 +38,26 @@ body {
 }
 
 .sidebar a {
-    text-decoration: none;
-    color: white; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px; /* can vary between 5 and 10 pixels */
+    margin: 5px 0; /* can vary between 5 and 10 pixels */
+    transition: background-color 0.2s; /* smoothens the color change on hover/active */
+    font-size: 12px; 
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: white;
+    color: red;
 }
 
 .sidebar i {
     color: red; 
     margin-bottom: 7px; 
+    display: block;  /* this will make the icon take up its own line, above the text */
+    font-size: 20px;
 }
 
 .sidebar .account a {
