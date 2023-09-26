@@ -1,0 +1,67 @@
+body {
+    background-color: white; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main-content {
+    margin-left: 85px; /* slightly wider than the sidebar width to avoid overlap */
+  }
+  
+.sidebar {
+    width: 80px; 
+    background-color: black;
+    height: 100vh; 
+    position: fixed; 
+    z-index: 1000;  
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background-color: black; 
+    margin: 7px 0; 
+    padding: 7px 0; 
+    transition: background-color 0.3s;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar i {
+    color: red; 
+    margin-bottom: 7px; 
+}
+
+.sidebar .account a {
+    color: white; 
+}
+
+.sidebar .account i {
+    color: white;
+}
+
+.sidebar li.active {
+    background-color: white;
+}
+
+.sidebar li.active a {
+    color: red;
+}
+
+.sidebar li.active i {
+    color: red;
+}

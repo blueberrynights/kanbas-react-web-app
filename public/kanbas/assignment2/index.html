@@ -1,162 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <title>Assignments</title>
+  <meta charset="UTF-8">
+  <title>Assignments</title>
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+  <link href="index.css" rel="stylesheet" />
 </head>
+
 <body>
-    
-  <table width="100%">
-    <tr VALIGN=TOP>
-        <td>
-            <ul>
-                <li><a href="/kanbas/profile/index.html">Account</a></li>
-                <li><a href=#>Dashboard</a></li>
-                <li><a href=#>Courses</a></li>
-                <li><a href=#>Calenda</a></li>
-                <li><a href=#>Inbox</a></li>
-                <li><a href=#>History</a></li>
-                <li><a href=#>Sudio</a></li>
-                <li><a href=#>Commons</a></li>
-                <li><a href=#>Help</a></li>
+
+  <tr VALIGN=TOP>
+    <td>
+      <div class="sidebar">
+        <ul style="list-style: none;">
+          <li>
+            <i class="fa-solid fa-n fa-2xl" style="color: #d41c2d; padding-top: 20px;"></i>
+          </li>
+          <li>
+            <a href="/kanbas/assignment2/profile/index.html">
+              <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+              <span>Account</span>
+            </a>
+          </li>
+          <li>
+            <a href="#dashboard">
+              <i class="fas fa-tachometer-alt" style="color: #d41c2d;"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#courses">
+              <i class="fas fa-book" style="color: #d41c2d;"></i>
+              <span>Courses</span>
+            </a>
+          </li>
+          <li>
+            <a href="#calendar">
+              <i class="fas fa-calendar-alt" style="color: #d41c2d;"></i>
+              <span>Calendar</span>
+            </a>
+          </li>
+          <li>
+            <a href="#inbox">
+              <i class="fas fa-inbox" style="color: #d41c2d;"></i>
+              <span>Inbox</span>
+            </a>
+          </li>
+          <li>
+            <a href="#history">
+              <i class="fas fa-history" style="color: #d41c2d;"></i>
+              <span>History</span>
+            </a>
+          </li>
+          <li>
+            <a href="#studio">
+              <i class="fas fa-microphone" style="color: #d41c2d;"></i>
+              <span>Studio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#commons">
+              <i class="fas fa-clone" style="color: #d41c2d;"></i>
+              <span>Commons</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-content">
+        <table width="100%">
+          <td>
+            <ul style="list-style: none;">
+              <li><a href="/kanbas/assignment2/home.html">Home</a></li>
+              <li><a href=#>Modules</a></li>
+              <li><a href=#>Piazza</a></li>
+              <li><a href=#>Zoom Meetings</a></li>
+              <li><a href="/kanbas/assignment2/index.html">Assignments</a></li>
+              <li><a href=#>Quizzes</a></li>
+              <li><a href="/kanbas/assignment2/grades.html">Grades</a></li>
+              <li><a href=#>People</a></li>
+              <li><a href=#>Discussions</a></li>
+              <li><a href=#>Panopto Video</a></li>
+              <li><a href=#>Announcements</a></li>
+              <li><a href=#>Pages</a></li>
+              <li><a href=#>Files</a></li>
+              <li><a href=#>Rubrics</a></li>
+              <li><a href=#>Outcomes</a></li>
+              <li><a href=#>Collaborations</a></li>
+              <li><a href=#>Syllabus</a></li>
+              <li><a href=#>Settings</a></li>
             </ul>
-        </td>
+          </td>
 
-        <td>
-          <ul>
-            <li><a href="/kanbas/home.html">Home</a></li>
-            <li><a href=#>Modules</a></li>
-            <li><a href=#>Piazza</a></li>
-            <li><a href=#>Zoom Meetings</a></li>
-            <li><a href="index.html">Assignments</a></li>
-            <li><a href=#>Quizzes</a></li>
-            <li><a href="/kanbas/grades.html">Grades</a></li>
-            <li><a href=#>People</a></li>
-            <li><a href=#>Discussions</a></li>
-            <li><a href=#>Panopto Video</a></li>
-            <li><a href=#>Announcements</a></li>
-            <li><a href=#>Pages</a></li>
-            <li><a href=#>Files</a></li>
-            <li><a href=#>Rubrics</a></li>
-            <li><a href=#>Outcomes</a></li>
-            <li><a href=#>Collaborations</a></li>
-            <li><a href=#>Syllabus</a></li>
-            <li><a href=#>Settings</a></li>
-        </ul>
-        </td>
+          <td>
+            <ul>
 
-        <td>
-          <ul>
-
-            <form>
-              <input type="text" placeholder="Search for Assignment">
-            </form>
-            <button type="button">Group</button>
-            <button type="button">Assignment</button>
-            <select id="export">
-              <option selected value="edit-assignment-dates">
-                Edit Assignment Dates</option>
-            </select>
+              <form>
+                <input type="text" placeholder="Search for Assignment">
+              </form>
+              <button type="button">Group</button>
+              <button type="button">Assignment</button>
+              <select id="export">
+                <option selected value="edit-assignment-dates">
+                  Edit Assignment Dates</option>
+              </select>
 
 
-          <p></p>
+              <p></p>
 
-          <hr>
-          
-          <h2>ASSIGNMENTS 40% of Total
-            <select id="export">
-              <option selected value="edit">
-                Edit</option>
-              <option value="option2">Speed Grader</option>
-              <option value="option3">Duplicate</option>
-              <option value="option4">Delete</option>
-              <option value="option5">Move To...</option>
-              <option value="option6">Send To...</option>
-              <option value="option7">Copy To...</option>
-              <option value="option8">Share to Commons</option>
-            </select>
-          </h2>
+              <hr>
 
-          <ul>
-            <li><a href="edit.html">A1 - ENV + HTML Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">A2 - CSS + BOOTSTRAP Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">A3 - JS + REACT Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">A4 - STATE + REDUX Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">A5 - NODE + SESSION Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">A6 - MONGO + MONGOOSE Multiple Modules</a> | Not available yet</li>
-          </ul>
+              <h2>ASSIGNMENTS 40% of Total
+                <select id="export">
+                  <option selected value="edit">
+                    Edit</option>
+                  <option value="option2">Speed Grader</option>
+                  <option value="option3">Duplicate</option>
+                  <option value="option4">Delete</option>
+                  <option value="option5">Move To...</option>
+                  <option value="option6">Send To...</option>
+                  <option value="option7">Copy To...</option>
+                  <option value="option8">Share to Commons</option>
+                </select>
+              </h2>
+
+              <ul>
+                <li><a href="edit.html">A1 - ENV + HTML Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">A2 - CSS + BOOTSTRAP Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">A3 - JS + REACT Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">A4 - STATE + REDUX Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">A5 - NODE + SESSION Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">A6 - MONGO + MONGOOSE Multiple Modules</a> | Not available yet</li>
+              </ul>
 
 
-          <h2>QUIZZES 10% of Total
-            <select id="export">
-              <option selected value="edit">
-                Edit</option>
-              <option value="option2">Speed Grader</option>
-              <option value="option3">Duplicate</option>
-              <option value="option4">Delete</option>
-              <option value="option5">Move To...</option>
-              <option value="option6">Send To...</option>
-              <option value="option7">Copy To...</option>
-              <option value="option8">Share to Commons</option>
-            </select>
-          </h2>
+              <h2>QUIZZES 10% of Total
+                <select id="export">
+                  <option selected value="edit">
+                    Edit</option>
+                  <option value="option2">Speed Grader</option>
+                  <option value="option3">Duplicate</option>
+                  <option value="option4">Delete</option>
+                  <option value="option5">Move To...</option>
+                  <option value="option6">Send To...</option>
+                  <option value="option7">Copy To...</option>
+                  <option value="option8">Share to Commons</option>
+                </select>
+              </h2>
 
-          <ul>
-            <li><a href="edit.html">Q1 - HTML Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">Q2 - CSS Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">Q3 - JS, ES6 Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">Q4 - NODE Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">Q5 - MONGO Multiple Modules</a> | Not available yet</li>
-          </ul>
+              <ul>
+                <li><a href="edit.html">Q1 - HTML Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">Q2 - CSS Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">Q3 - JS, ES6 Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">Q4 - NODE Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">Q5 - MONGO Multiple Modules</a> | Not available yet</li>
+              </ul>
 
 
 
-          <h2>EXAMS 20% of Total
-            <select id="export">
-              <option selected value="edit">
-                Edit</option>
-              <option value="option2">Speed Grader</option>
-              <option value="option3">Duplicate</option>
-              <option value="option4">Delete</option>
-              <option value="option5">Move To...</option>
-              <option value="option6">Send To...</option>
-              <option value="option7">Copy To...</option>
-              <option value="option8">Share to Commons</option>
-            </select>
-          </h2>
+              <h2>EXAMS 20% of Total
+                <select id="export">
+                  <option selected value="edit">
+                    Edit</option>
+                  <option value="option2">Speed Grader</option>
+                  <option value="option3">Duplicate</option>
+                  <option value="option4">Delete</option>
+                  <option value="option5">Move To...</option>
+                  <option value="option6">Send To...</option>
+                  <option value="option7">Copy To...</option>
+                  <option value="option8">Share to Commons</option>
+                </select>
+              </h2>
 
-          <ul>
-            <li><a href="edit.html">Midterm</a></li>
-            <li><a href="edit.html">Multiple Modules</a> | Not available yet</li>
-            <li><a href="edit.html">Final</a> </li>
-            <li><a href="edit.html">Multiple Modules</a> | Not available yet</li>
-          </ul>
+              <ul>
+                <li><a href="edit.html">Midterm</a></li>
+                <li><a href="edit.html">Multiple Modules</a> | Not available yet</li>
+                <li><a href="edit.html">Final</a> </li>
+                <li><a href="edit.html">Multiple Modules</a> | Not available yet</li>
+              </ul>
 
-          <h2>PROJECTS 30% of Total
-            <select id="export">
-              <option selected value="edit">
-                Edit</option>
-              <option value="option2">Speed Grader</option>
-              <option value="option3">Duplicate</option>
-              <option value="option4">Delete</option>
-              <option value="option5">Move To...</option>
-              <option value="option6">Send To...</option>
-              <option value="option7">Copy To...</option>
-              <option value="option8">Share to Commons</option>
-            </select>
-          </h2>
+              <h2>PROJECTS 30% of Total
+                <select id="export">
+                  <option selected value="edit">
+                    Edit</option>
+                  <option value="option2">Speed Grader</option>
+                  <option value="option3">Duplicate</option>
+                  <option value="option4">Delete</option>
+                  <option value="option5">Move To...</option>
+                  <option value="option6">Send To...</option>
+                  <option value="option7">Copy To...</option>
+                  <option value="option8">Share to Commons</option>
+                </select>
+              </h2>
 
-          <ul>
-            <li><a href="edit.html">Project</a></li>
-            <li><a href="edit.html">Multiple Modules</a> | Not available yet</li>
-          </ul>
+              <ul>
+                <li><a href="edit.html">Project</a></li>
+                <li><a href="edit.html">Multiple Modules</a> | Not available yet</li>
+              </ul>
 
 
-        </ul>
-        </td>
-    </tr>
-</table>
+            </ul>
+          </td>
+  </tr>
+  </table>
+  </div>
 
 
 </body>
+
 </html>
