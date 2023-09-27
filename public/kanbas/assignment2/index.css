@@ -202,3 +202,7 @@ body {
     text-decoration: none;
 }
 
+.profile-name-label i, 
+.profile-name-label nav {
+    vertical-align: middle;
+}
