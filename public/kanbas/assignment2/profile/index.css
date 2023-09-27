@@ -6,20 +6,25 @@ body {
 
 .main-content {
     margin-left: 85px; /* slightly wider than the sidebar width to avoid overlap */
-  }
+}
   
 .sidebar {
     width: 80px; 
     background-color: black;
     height: 100vh; 
     position: fixed; 
-    z-index: 1000;  
+    z-index: 1001; 
 }
+
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.sidebar a div {
+    text-align: center;
 }
 
 .sidebar li {
@@ -34,16 +39,27 @@ body {
 }
 
 .sidebar a {
+    display: block;
+    color: white;
     text-decoration: none;
-    color: white; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: black;
+    text-align: center;
+    padding: 5px; /* can vary between 5 and 10 pixels */
+    margin: 5px 0; /* can vary between 5 and 10 pixels */
+    transition: background-color 0.2s; /* smoothens the color change on hover/active */
+    font-size: 12px; 
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: white;
+    color: red;
 }
 
 .sidebar i {
     color: red; 
     margin-bottom: 7px; 
+    display: block;  /* this will make the icon take up its own line, above the text */
+    font-size: 20px;
 }
 
 .sidebar .account a {
@@ -64,4 +80,100 @@ body {
 
 .sidebar li.active i {
     color: red;
+}
+
+.sidebar a.account-link {
+    /* Your override styles go here */
+    color: #d41c2d; /* example: override text color */
+    background-color: white; /* example: override background color */
+}
+
+
+/* Account Navigation Sidebar Styles */
+.account-sidebar {
+    width: 200px; /* set to the upper limit */
+    background-color: white;
+    height: 100vh;
+    position: fixed;
+    left: 100px; /* the width of the main sidebar + the space in between */
+    z-index: 999; /* should be under the main sidebar if they overlap */
+    text-wrap: wrap;
+}
+
+.account-sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.account-sidebar li {
+    padding: 0;
+    padding-left: 10px; /* space between the border and text */
+    margin: 0;
+    margin-bottom: 17.5px; /* mid-value of the given range */
+    transition: background-color 0.3s;
+}
+
+.account-sidebar li.selected {
+    border-left: 5px solid black;
+    color: black;
+}
+
+.account-sidebar a {
+    text-decoration: none;
+    color: #d41c2d;
+    display: block;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+.account-sidebar .selected a {
+    color: black;
+}
+
+.main-content {
+    margin-left: 400px;  /* 80px (sidebar width) + 200px (account-sidebar width) + 5px (some buffer space) */
+}
+
+.profile-name-label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left : 85px;
+}
+
+.custom-size {
+    font-size: 175px;
+}
+
+.links {
+    color: #d41c2d;
+    text-decoration: none;
+}
+
+.custom-size-edit {
+    font-size: 175px;
+    padding-bottom: 10px;
+}
+
+.spacing{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-container i {
+    margin-left: 10px;  /* Add some space between the input and the icon */
+}
+
+.float-end {
+    padding-top: 60px;
+}
+
+.add-link-button {
+    margin-left: 12px;
+    padding-top: 20px;
 }

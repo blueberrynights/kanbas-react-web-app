@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>Assignments</title>
   <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="index.css" rel="stylesheet" />
 </head>
 
@@ -15,22 +16,23 @@
       <div class="sidebar">
         <ul style="list-style: none;">
           <li>
-            <i class="fa-solid fa-n fa-2xl" style="color: #d41c2d; padding-top: 20px;"></i>
+            <i class="fa-solid fa-n fa-2xl"
+              style="color: #d41c2d; font-size: 50px; padding-top: 20px; padding-bottom: 20px;"></i>
           </li>
-          <li>
-            <a href="/kanbas/assignment2/profile/index.html">
-              <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+          <li style="background-color: white;">
+            <a href="/kanbas/assignment2/profile/index.html" class="account-link">
+              <i class="fa-solid fa-user" style="color: #adacac;"></i>
               <span>Account</span>
             </a>
           </li>
           <li>
-            <a href="#dashboard">
+            <a href="/kanbas/assignment2/dashboard.html">
               <i class="fas fa-tachometer-alt" style="color: #d41c2d;"></i>
               <span>Dashboard</span>
             </a>
           </li>
           <li>
-            <a href="#courses">
+            <a href="/kanbas/assignment2/home.html">
               <i class="fas fa-book" style="color: #d41c2d;"></i>
               <span>Courses</span>
             </a>
@@ -67,14 +69,19 @@
           </li>
         </ul>
       </div>
+      
+      <div class="profile-name-label">
+        <i class="fa-solid fa-bars fa-xl" style="color: #d41c2d; padding: 10px;"></i>
+        Jose Annunziato's Profile
+        <hr>
+      </div>
 
-      <div class="main-content">
+      <div class="account-sidebar">
         <table width="100%">
-
           <td>
             <ul>
               <li><a href=#>Notifications</a></li>
-              <li><a href="index.html">Profile</a></li>
+              <li class="selected"><a href="index.html">Profile</a></li>
               <li><a href=#>Files</a></li>
               <li><a href=#>Settings</a></li>
               <li><a href=#>eProfilios</a></li>
@@ -84,78 +91,120 @@
               <li><a href=#>Global Announcements</a></li>
             </ul>
           </td>
+        </table>
+      </div>
 
+      <div class="main-content">
+        <table width="100%">
           <td>
 
-            <h2>Jose Annunziato</h2>
-
-            Name:*
-            <form>
-              <input type="text" id="name" placeholder="Jose Annunziato" title="name" /><br />
-            </form>
+            <div>
+              <i class="fa-solid fa-user custom-size-edit" style="color: #adacac;"></i>
+              <br>
+            </div>
 
 
-            Pronouns:
+            <div class="spacing">
+              Name:*
+            </div>
+
+            <input class="form-control" type="text" placeholder="Jose Annunziato">
+            <br>
+
+
+            <div class="spacing">
+              Pronouns:
+              <br>
+            </div>
+
             <select id="pronouns">
               <option selected value="pronouns">
                 None</option>
+              <option value="option2">She/Her/Hers</option>
+              <option value="option3">He/Him/His</option>
+              <option value="option4">They/Them/Theirs</option>
+
             </select>
 
-            <p></p>
-            Title:
+
+            <div class="spacing">
+              Title:
+              <br>
+            </div>
+
             <form>
-              <input type="text" id="name" placeholder="" title="name" /><br />
+              <input class="form-control" type="text" id="name" placeholder="" title="name">
+              <br>
             </form>
 
             <h2>Contact</h2>
-            No registered services, you can add some on the <a href=#>settings</a> page
+            No registered services, you can add some on the
+            <a class="links" href=#>settings</a> page
 
+            <div style="padding-top: 30px;"></div>
             <h2>Contact</h2>
-            No registered services, you can add some on the <a href=#>settings</a> page
+            No registered services, you can add some on the <a class="links" href=#>settings</a> page
 
+
+            <div style="padding-top: 30px;"></div>
             <h2>Biography</h2>
-            Faculty, Software Engineer, AI, Space, and renewables enthusiast.
 
-            <form id="textarea">
-              <label>Biography:</label><br />
-              <textarea>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
-            </form>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1"
+                placeholder="Faculty, Software Engineer, AI, Space, and renewables enthusiast." rows="3"></textarea>
+            </div>
 
+            <div style="padding-top: 30px;"></div>
             <h2>Links</h2>
-            <ul>
-              <li><a href=#>YouTube Links to an external site.</a></li>
-            </ul>
 
-            <table>
-              <tr>
-                <th>Title</th>
-                <th>URL</th>
-              </tr>
-              <tr>
-                <td>
-                  <form>
-                    <input type="text" id="youtube" placeholder="YouTube" title="youtube" /><br />
-                  </form>
-                  ->
-                  <button type="button">Add another link</button>
+
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  Title
                   <br>
-                  <button type="button">Cancel</button>
-                  <button type="button">Save Profile</button>
+                  <div class="flex-container">
+                    <input type="text" id="youtube1" placeholder="YouTube" title="youtube" />
+                    <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                </div>
+                <div class="col">
+                  URL
                   <br>
-                  <button type="button">Edit Profile</button>
-                  <button type="button">Cancel Editing</button>
-                </td>
+                  <div class="flex-container">
+                    <input type="text" id="youtube2" placeholder="https://www.youtube.com" title="youtube" />
+                    <i class="fa-solid fa-x" style="color: #d41c2d;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="add-link-button">
+              <button type="button">Add another link</button>
+            </div>
 
 
-                <td VALIGN=TOP>
-                  <input type="text" id="youtube" placeholder="https://www.youtube.com" title="youtube" /><br />
-                  <a href=#>Remove</a>
-                </td>
-              </tr>
-            </table>
+            <div class="float-end">
+              <button type="button" class="btn btn-light">Cancel</button>
+              <button type="button" class="btn btn-danger">Save</button>
+            </div>
           </td>
+
+          <td VALIGN=TOP>
+            <button type="button">
+              <i class="fa-solid fa-pencil fa-rotate-270"></i>
+              <a href="index.html">Cancel Editing</a>
+            </button>
+          </td>
+
+        </table>
+
+        <br>
+      </div>
   </tr>
   </table>
+
 
 
 </body>
