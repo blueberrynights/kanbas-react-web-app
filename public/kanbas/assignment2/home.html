@@ -11,7 +11,7 @@
 
 <body>
 
-  <div class="container" style="margin:0px; padding:0px;">
+  <div class="container" style="margin:0px; padding:0px; max-width: 100%;">
     <!-- Main Sidebar -->
     <div class="sidebar">
       <ul style="list-style: none;">
@@ -104,10 +104,10 @@
       </ul>
     </div>
 
-    <div class="row" width="100%">
+    <div class="row" styles="width:100%;">
 
       <!-- Main Content -->
-      <div class="col-lg-10">
+      <div class="col-lg-9">
         <div class="home-buttons">
           <button type="button" class="btn btn-secondary">Collapse All</button>
           <button type="button" class="btn btn-secondary">View Progress</button>
@@ -139,23 +139,23 @@
               LEARNING OBJECTIVES
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Introduction to the course</a>
+              <a href="#" class="indented-list-item">Introduction to the course</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Learn what is Web Development</a>
+              <a href="#" class="indented-list-item">Learn what is Web Development</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Creating a development enviornment</a>
+              <a href="#" class="indented-list-item">Creating a development enviornment</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Creating a Web Application</a>
+              <a href="#" class="indented-list-item">Creating a Web Application</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Getting started with the 1st assignment</a>
+              <a href="#" class="indented-list-item">Getting started with the 1st assignment</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
 
@@ -164,11 +164,11 @@
               READING
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Full Stack Developer - Chapter 1 - Introduction</a>
+              <a href="#" class="indented-list-item">Full Stack Developer - Chapter 1 - Introduction</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</a>
+              <a href="#" class="indented-list-item">Full Stack Developer - Chapter 2 - Creating User Interfaces with HTML</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
 
@@ -177,15 +177,15 @@
               SLIDES
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Introduction to Web Development Links to an external site</a>
+              <a href="#" class="indented-list-item">Introduction to Web Development Links to an external site</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Creating an HTTP server with Node.js Links to an external site</a>
+              <a href="#" class="indented-list-item">Creating an HTTP server with Node.js Links to an external site</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
             <div class="list-group-item">
-              <a href="#" class="text-danger">Creating a React Application Links to an external site</a>
+              <a href="#" class="indented-list-item">Creating a React Application Links to an external site</a>
               <i class="fas fa-check text-success float-end"></i>
             </div>
 
@@ -199,15 +199,15 @@
                 LEARNING OBJECTIVES
               </div>
               <div class="list-group-item">
-                <a href="#" class="text-danger">Learn how to create user interfaces with HTML</a>
+                <a href="#" class="indented-list-item">Learn how to create user interfaces with HTML</a>
                 <i class="fas fa-check text-success float-end"></i>
               </div>
               <div class="list-group-item">
-                <a href="#" class="text-danger">Keep working on assignment 1</a>
+                <a href="#" class="indented-list-item">Keep working on assignment 1</a>
                 <i class="fas fa-check text-success float-end"></i>
               </div>
               <div class="list-group-item">
-                <a href="#" class="text-danger">Deploy the assignment to Netlify</a>
+                <a href="#" class="indented-list-item">Deploy the assignment to Netlify</a>
                 <i class="fas fa-check text-success float-end"></i>
               </div>
 
@@ -216,11 +216,11 @@
                 READING
               </div>
               <div class="list-group-item">
-                <a href="#" class="text-danger">Full Stack Developer - Chapter 1 - Introduction</a>
+                <a href="#" class="indented-list-item">Full Stack Developer - Chapter 1 - Introduction</a>
                 <i class="fas fa-check text-success float-end"></i>
               </div>
               <div class="list-group-item">
-                <a href="#" class="text-danger">Full Stack Developer - Chapter 2 - Creating User Interfaces with
+                <a href="#" class="indented-list-item">Full Stack Developer - Chapter 2 - Creating User Interfaces with
                   HTML</a>
                 <i class="fas fa-check text-success float-end"></i>
               </div>
@@ -230,25 +230,38 @@
       </div>
 
       <!-- Course Status Sidebar -->
-      <div class="col-lg-2">
-        <div class="course-status-sidebar">
-          <h1>Course Status</h1>
-          <button type="button">Unpublish</button>
-          <button type="button">Published</button>
+      <div class="col-lg-3">
+        <div class="course-status-sidebar" style="padding-right:20px;">
+          <h3>Course Status</h3>
+          <button type="button" class="btn btn-secondary btn-sm">Unpublish</button>
+          <button type="button" class="btn btn-secondary btn-sm">Published</button>
 
-          <ul>
-            <li><a href="#">Import Existing Content</a></li>
-            <li><a href="#">Importing From Commons</a></li>
-            <li><a href="#">Choose Home Page</a></li>
-            <li><a href="#">View Course Stream</a></li>
-            <li><a href="#">New Announcement</a></li>
-            <li><a href="#">New Analytics</a></li>
-            <li><a href="#">View Course Notifications</a></li>
+          <ul class="list-group" style="padding-top:20px;">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Import Existing Content
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Importing From Commons
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Choose Home Page
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              View Course Stream
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              New Announcement
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              New Analytics
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              View Course Notifications
+            </li>
           </ul>
 
-          <h1>
-            Coming Up
-          </h1>
+
+          <h3 style="padding-top:20px;">Coming Up</h3>
 
           <a href="#">View Calendar</a>
 

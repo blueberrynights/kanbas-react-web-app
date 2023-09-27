@@ -188,3 +188,17 @@ body {
 .home-buttons > .btn:last-child, .home-buttons > .dropdown:last-child {
     margin-right: 0;         /* remove the margin for the last button */
 }
+
+.course-status-sidebar {
+    padding-left: 20px;           /* set the container to flex */
+    justify-content: flex-end; /* align the items to the end (right) */
+    align-items: center;       /* center the items vertically */
+    flex-wrap: nowrap;         /* prevent wrapping of items */
+}
+
+.indented-list-item {
+    padding-left: 30px;   /* or whatever value you want */
+    color: black;
+    text-decoration: none;
+}
+
