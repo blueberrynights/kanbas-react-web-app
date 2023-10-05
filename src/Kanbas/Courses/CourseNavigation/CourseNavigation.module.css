@@ -1,0 +1,36 @@
+/* Remove border and background from the list group */
+.listGroup {
+    border: none;
+    background-color: transparent;
+}
+
+/* Remove border, change background and text color of list group items */
+.listGroupItem {
+    border: none;
+    background-color: transparent;
+    color: red;
+    padding: 10px 15px;
+}
+
+/* Style for active list group items */
+.listGroupItem.active {
+    background-color: transparent;
+    color: black;
+    padding-left: 11px; /* Adjust padding to keep text aligned */
+    position: relative;
+}
+
+.listGroupItem.active:before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 20px); /* Adjust the height */
+    width: 2px;
+    left: 0; /* Adjust this value to shift the line to the left */
+    top: 10px; /* Adjust this to position the line correctly */
+    background-color: black;
+}
+
+/* Optional: Add hover effect to list group items */
+.listGroupItem:hover {
+    text-decoration: underline;
+}

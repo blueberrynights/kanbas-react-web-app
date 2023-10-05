@@ -1,19 +1,19 @@
 import { Link } from "react-router-dom";
 import db from "../Database";
-import './styles.css'; // import the CSS for styling
+import styles from './Dashboard.module.css'; 
 
 function Dashboard() {
   return (
     <div>
       <h1>Dashboard</h1>
-      <div className="course-grid">
+      <div className={styles.courseGrid}>
         {db.courses.map((course) => (
-          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="course-card">
-            <img src={course.image} alt={course.name} className="course-image" />
-            <div className="course-info">
-              <h2 className="course-name">{course.name}</h2>
-              <p className="course-number">{course.number}</p>
-              <p className="course-dates">{course.startDate} - {course.endDate}</p>
+          <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className={styles.courseCard}>
+            <img src={course.image} alt={course.name} className={styles.courseImage}/>
+            <div className={styles.courseInfo}>
+              <h2 className={styles.courseGrid}>{course.name}</h2>
+              <p className={styles.courseNumber}>{course.number}</p>
+              <p className={styles.courseDates}>{course.startDate} - {course.endDate}</p>
             </div>
           </Link>
         ))}
