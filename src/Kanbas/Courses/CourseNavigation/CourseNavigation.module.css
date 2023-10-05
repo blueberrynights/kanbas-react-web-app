@@ -1,20 +1,20 @@
-/* Remove border and background from the list group */
+/* Vertical sidebar */
 .listGroup {
-    border: none;
-    background-color: transparent;
+    padding-left: 20px;
+  display: flex;
+  flex-direction: column; /* Set to vertical */
+  width: 150px;
+  background-color: white; /* Sidebar background color */
 }
 
-/* Remove border, change background and text color of list group items */
 .listGroupItem {
-    border: none;
-    background-color: transparent;
-    color: red;
-    padding: 10px 15px;
+  padding: 10px;
+  color: red;
+  text-decoration: none;
 }
 
-/* Style for active list group items */
-.listGroupItem.active {
-    background-color: transparent;
+/* Active link styles */
+.active {
     color: black;
     padding-left: 11px; /* Adjust padding to keep text aligned */
     position: relative;
@@ -30,7 +30,6 @@
     background-color: black;
 }
 
-/* Optional: Add hover effect to list group items */
 .listGroupItem:hover {
     text-decoration: underline;
 }

@@ -1,14 +1,14 @@
-Styling for the course grid
-.course-grid {
+
+.courseGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Adjust the gap between course cards as needed */
     justify-content: flex-start; /* Changed from center to flex-start for left alignment */
-    padding: 20px;
+    padding-left: 20px;
   }
   
   /* Styling for the course cards */
-  .course-card {
+  .courseCard {
       display: block;
       width: 250px; /* You can adjust the width as per your requirements */
       background-color: #f5f5f5;
@@ -20,22 +20,22 @@ Styling for the course grid
       overflow: hidden; /* Makes sure that the image and content stay within the card borders */
   }
   
-  .course-image {
+  .courseImage {
       width: 100%;
       max-height: 150px; /* Adjust as per your requirements */
       object-fit: cover; /* Makes sure the image covers the area fully */
   }
   
-  .course-info {
+  .courseInfo {
       padding: 15px;
   }
   
-  .course-name {
+  .courseName {
       margin: 0;
       font-size: 1.2em;
   }
   
-  .course-number, .course-dates {
+  .courseNumber, .courseDates {
       margin: 5px 0;
       font-size: 0.9em;
       color: #555;
