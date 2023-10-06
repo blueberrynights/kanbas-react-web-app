@@ -10,7 +10,7 @@
   /* Styling for the course cards */
   .courseCard {
       display: block;
-      width: 250px; /* You can adjust the width as per your requirements */
+      width: 375px; /* You can adjust the width as per your requirements */
       background-color: #f5f5f5;
       border: 1px solid #ddd;
       border-radius: 5px;
@@ -39,5 +39,15 @@
       margin: 5px 0;
       font-size: 0.9em;
       color: #555;
+  }
+
+  .breadcrumb{
+    padding-left: 20px;
+  }
+
+  .pubcourses{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
   }
   

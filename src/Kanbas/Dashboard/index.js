@@ -3,9 +3,18 @@ import db from "../Database";
 import styles from './Dashboard.module.css'; 
 
 function Dashboard() {
+  const numCourses = db.courses.length;
   return (
     <div>
-      <h1>Dashboard</h1>
+      <div className={styles.breadcrumb}>
+        <h1>
+        Dashboard
+        </h1>
+      </div>
+      <hr></hr>
+      <div className={styles.pubcourses}>
+        Published Courses ({numCourses})
+      </div>
       <div className={styles.courseGrid}>
         {db.courses.map((course) => (
           <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className={styles.courseCard}>

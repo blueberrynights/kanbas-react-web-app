@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import db from "../../Database";
 import { Link } from "react-router-dom";
-
+import styles from "./AssignmentEdit.module.css";
 
 function AssignmentEditor() {
   const { assignmentId } = useParams();
@@ -17,17 +17,24 @@ function AssignmentEditor() {
     navigate(`/Kanbas/Courses/${courseId}/Assignments`);
   };
   return (
-    <div>
-      <h2>Assignment Name</h2>
+    <div className={styles.container}>
+      <h4>Assignment Name</h4>
       <input value={assignment.title}
-             className="form-control mb-2" />
-      <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
-            className="btn btn-danger">
-        Cancel
-      </Link>
-      <button onClick={handleSave} className="btn btn-success me-2">
-        Save
-      </button>
+        className="form-control mb-2" />
+
+      <div className={styles.cancelSave}>
+        <Link to={`/Kanbas/Courses/${courseId}/Assignments`}
+          className="btn btn-secondary">
+          Cancel
+        </Link>
+        <div className={styles.saveBut}>
+          <button onClick={handleSave} className="btn btn-danger">
+          Save
+        </button>
+        </div>
+        
+      </div>
+
     </div>
   );
 }

@@ -49,16 +49,13 @@ function KanbasNavigation() {
   return (
     <div className={styles.iconsContainer}>
       <div className={styles.listGroup}>
-        <FontAwesomeIcon icon={faN} size="2xl" className={styles.nIcon} />
+        <FontAwesomeIcon icon={faN} size="2x" className={styles.nIcon} />
         {links.map((link, index) => (
           <Link
             key={index}
             to={`/Kanbas/${link}`}
             className={`list-group-item ${activeLink === index ? "active" : ""}`}
             onClick={() => handleIconClick(index)}
-            style={{
-              backgroundColor: activeLink === index ? "white" : "black",
-            }}
           >
             <div className={styles.iconAndText}>
               <div className={index === 0 ? styles.accountIcon : styles.icon}>
@@ -67,7 +64,7 @@ function KanbasNavigation() {
               <span
                 className={styles.linkText}
                 style={{
-                  color: activeLink === index ? "red" : "white", // Change text color
+                  color: activeLink === index ? "#d41c2d" : "white", // Change text color
                 }}
               >
                 {link}

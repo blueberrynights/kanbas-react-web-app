@@ -1,0 +1,60 @@
+
+
+.moduleButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: right;
+    padding-top: 20px;
+}
+
+/* Container for the entire content */
+.homeContainer {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align content at the top */
+  }
+  
+  /* Main content container (left column) */
+  .mainContent {
+    flex-grow: 1; /* Allow this column to grow */
+    margin-right: 40px; /* Add spacing between columns */
+  }
+  
+  /* Status column (right column) */
+  .statusColumn {
+    width: 400px; /* Adjust the width as needed */
+
+  }
+
+  /* Style the list and list items */
+.statusColumn ul.list-group {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .statusColumn ul.list-group li.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+  }
+
+  /* Add this to your CSS file or module */
+.noOutline {
+    border: none !important; /* Remove the outline */
+  }
+  
+  .fullWidthButton {
+    width: 100%; /* Make the button full width */
+  }
+
+  /* Add this style to your Home.module.css */
+.lightGreyBackground {
+    background-color: #f5f5f5;
+  }
+  
+  

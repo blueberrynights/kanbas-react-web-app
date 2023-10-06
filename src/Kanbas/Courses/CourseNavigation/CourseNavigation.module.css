@@ -1,10 +1,11 @@
 /* Vertical sidebar */
 .listGroup {
     padding-left: 20px;
-  display: flex;
-  flex-direction: column; /* Set to vertical */
-  width: 150px;
-  background-color: white; /* Sidebar background color */
+    width: 150px;
+    display: flex;
+    flex-direction: column; /* Set to vertical */
+    background-color: white; /* Sidebar background color */
+    margin: 0%;  
 }
 
 .listGroupItem {
