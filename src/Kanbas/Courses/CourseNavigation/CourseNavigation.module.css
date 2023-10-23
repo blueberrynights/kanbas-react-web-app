@@ -1,0 +1,36 @@
+/* Vertical sidebar */
+.listGroup {
+    padding-left: 20px;
+    width: 150px;
+    display: flex;
+    flex-direction: column; /* Set to vertical */
+    background-color: white; /* Sidebar background color */
+    margin: 0%;  
+}
+
+.listGroupItem {
+  padding: 10px;
+  color: red;
+  text-decoration: none;
+}
+
+/* Active link styles */
+.active {
+    color: black;
+    padding-left: 11px; /* Adjust padding to keep text aligned */
+    position: relative;
+}
+
+.listGroupItem.active:before {
+    content: "";
+    position: absolute;
+    height: calc(100% - 20px); /* Adjust the height */
+    width: 2px;
+    left: 0; /* Adjust this value to shift the line to the left */
+    top: 10px; /* Adjust this to position the line correctly */
+    background-color: black;
+}
+
+.listGroupItem:hover {
+    text-decoration: underline;
+}

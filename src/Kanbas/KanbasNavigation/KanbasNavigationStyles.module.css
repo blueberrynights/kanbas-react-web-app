@@ -1,0 +1,45 @@
+/* Container for both icon and text */
+.iconAndText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.accountIcon {
+  color: grey;
+}
+
+.icon {
+  color: red;
+}
+
+.linkText {
+  color: white;
+}
+
+/* Styles for the N icon */
+.nIcon {
+  background-color: black;
+  font-size: 50px;
+  color: #d41c2d;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+/* Container for N icon and other icons */
+.iconsContainer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}
+
+/* Active background color */
+.active {
+  background-color: white !important; /* Add !important to ensure it overrides other styles */
+}

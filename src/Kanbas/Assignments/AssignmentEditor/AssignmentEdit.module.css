@@ -1,0 +1,13 @@
+.container{
+    padding-top: 20px;
+}
+
+.cancelSave{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+.saveBut {
+    padding-left: 5px;
+}

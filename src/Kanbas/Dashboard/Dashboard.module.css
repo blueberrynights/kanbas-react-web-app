@@ -1,0 +1,53 @@
+
+.courseGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap between course cards as needed */
+    justify-content: flex-start; /* Changed from center to flex-start for left alignment */
+    padding-left: 20px;
+  }
+  
+  /* Styling for the course cards */
+  .courseCard {
+      display: block;
+      width: 375px; /* You can adjust the width as per your requirements */
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: black;
+      overflow: hidden; /* Makes sure that the image and content stay within the card borders */
+  }
+  
+  .courseImage {
+      width: 100%;
+      max-height: 150px; /* Adjust as per your requirements */
+      object-fit: cover; /* Makes sure the image covers the area fully */
+  }
+  
+  .courseInfo {
+      padding: 15px;
+  }
+  
+  .courseName {
+      margin: 0;
+      font-size: 1.2em;
+  }
+  
+  .courseNumber, .courseDates {
+      margin: 5px 0;
+      font-size: 0.9em;
+      color: #555;
+  }
+
+  .breadcrumb{
+    padding-left: 20px;
+  }
+
+  .pubcourses{
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  
