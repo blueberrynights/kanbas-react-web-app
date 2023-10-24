@@ -1,18 +1,19 @@
+import React from "react";
+import TodoForm from "./TodoForm";
+import TodoItem from "./TodoItem";
 import { useSelector } from "react-redux";
-function Assignment3() {
+function TodoList() {
   const { todos } = useSelector((state) => state.todosReducer);
   return (
     <div>
-      <h2>Assignment 3</h2>
+      <h2>Todo List</h2>
       <ul className="list-group">
+        <TodoForm />
         {todos.map((todo) => (
-          <li className="list-group-item" key={todo.id}>
-            {todo.title}
-          </li>
+          <TodoItem todo={todo} />
         ))}
       </ul>
-      ...
     </div>
   );
 }
-export default Assignment3;
+export default TodoList;
