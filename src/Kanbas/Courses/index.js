@@ -11,14 +11,25 @@ import {
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import styles from './Courses.module.css';
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
-  
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   // Get the current location using useLocation hook
   const location = useLocation();
-
   // Define a function to get the breadcrumb text based on the current route
   const getBreadcrumbText = () => {
     const path = location.pathname;
@@ -32,7 +43,6 @@ function Courses({ courses }) {
       return "Assignments";
     }
   };
-
   // Get the breadcrumb text based on the current route
   const breadcrumbText = getBreadcrumbText();
 
