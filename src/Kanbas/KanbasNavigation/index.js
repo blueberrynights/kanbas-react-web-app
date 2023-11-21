@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
+  faRightToBracket,
   faTachometerAlt,
   faBook,
   faCalendarAlt,
@@ -18,6 +19,7 @@ import { useState } from "react";
 function KanbasNavigation() {
   const links = [
     "Account",
+    "SignIn",
     "Dashboard",
     "Courses",
     "Calendar",
@@ -29,6 +31,7 @@ function KanbasNavigation() {
   ];
   const icons = [
     <FontAwesomeIcon icon={faUser} />,
+    <FontAwesomeIcon icon={faRightToBracket} />,
     <FontAwesomeIcon icon={faTachometerAlt} />,
     <FontAwesomeIcon icon={faBook} />,
     <FontAwesomeIcon icon={faCalendarAlt} />,
