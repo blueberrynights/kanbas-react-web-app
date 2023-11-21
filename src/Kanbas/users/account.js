@@ -1,5 +1,6 @@
 import * as client from "./client";
-import { useState, useEffect, useParams } from "react";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
