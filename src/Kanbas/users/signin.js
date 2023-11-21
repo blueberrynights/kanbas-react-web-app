@@ -8,10 +8,11 @@ function Signin() {
 
   const navigate = useNavigate();
   const signin = async () => {
-    console.log('Signing in with credentials:', credentials);
+    console.log(credentials);
     await client.signin(credentials);
-    <Navigate to="Account" />
+    navigate("/Kanbas/users/account");
   };
+
 
 
   return (
